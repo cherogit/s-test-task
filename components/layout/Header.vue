@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__wrapper container">
       <a class="header__logo logo" href="https://selectel.ru/" rel="noopener" target="_blank">
-        <Logo width="112" height="24" alt="Логотип Selectel" />
+        <Logo width="112" height="24" />
       </a>
 
       <ul class="header__contacts contacts-links">

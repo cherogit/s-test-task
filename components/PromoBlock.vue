@@ -18,8 +18,8 @@
           <source srcset="./../assets/img/medium_image.webp 1x, ./../assets/img/medium_image@2.webp 2x" media="(min-width: 768px)">
           <source srcset="./../assets/img/medium_image.png 1x, ./../assets/img/medium_image@2.png 2x" media="(min-width: 768px)">
 
-          <source srcset="./../assets/img/image.webp 1x, ./../assets/img/image@2.webp 2x">
-          <source srcset="./../assets/img/image.png 1x, ./../assets/img/image@2.png 2x">
+          <source srcset="./../assets/img/image.webp 1x, ./../assets/img/image@2.webp 2x" type="image/webp">
+          <source srcset="./../assets/img/image.png 1x, ./../assets/img/image@2.png 2x" type="image/png">
 
           <img src="./../assets/img/large_image.png" srcset="./../assets/img/large_image@2.png 2x" width="380" height="363" alt="Надежные серверы для проектов любой сложности">
         </picture>

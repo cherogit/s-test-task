@@ -3,7 +3,7 @@
     <div class="footer__wrapper container">
       <div class="footer__social">
         <a class="footer__logo logo" href="https://selectel.ru/" rel="noopener" target="_blank">
-          <Logo width="112" height="24" alt="Логотип Selectel" />
+          <Logo width="112" height="24"/>
         </a>
         <ul class="social-links">
           <li class="social-links__item">

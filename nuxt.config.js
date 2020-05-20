@@ -5,6 +5,9 @@ export default {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'ru'
+    },
     title: 'Тестовое задание Selectel',
     meta: [
       { charset: 'utf-8' },
@@ -23,6 +26,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'vue-slider-component/theme/antd.css',
     './assets/scss/main.scss'
   ],
   styleResources: {

@@ -123,7 +123,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .servers {
     margin-bottom: 32px;
 
