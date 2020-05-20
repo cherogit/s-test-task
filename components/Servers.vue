@@ -73,6 +73,7 @@
 </template>
 
 <script>
+  import 'vue-slider-component/theme/antd.css'
   import {getServers} from "~/plugins/api"
   import {translations} from "~/plugins/translations"
   import ServersList from "./ServersList"

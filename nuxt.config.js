@@ -26,7 +26,6 @@ export default {
   ** Global CSS
   */
   css: [
-    'vue-slider-component/theme/antd.css',
     './assets/scss/main.scss'
   ],
   styleResources: {
@@ -54,6 +53,13 @@ export default {
     '@nuxtjs/style-resources',
     'nuxt-svg-loader',
   ],
+  svgLoader: {
+    svgoConfig: {
+      plugins: [
+        { prefixIds: false }
+      ]
+    }
+  },
   /*
   ** Build configuration
   */
