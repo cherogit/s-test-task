@@ -50,15 +50,14 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    'nuxt-svg-loader',
+    ['nuxt-svg-loader', {
+      svgo: {
+        plugins: [
+          { prefixIds: true },
+        ],
+      },
+    }],
   ],
-  svgLoader: {
-    svgoConfig: {
-      plugins: [
-        {prefixIds: false}
-      ]
-    }
-  },
   /*
   ** Build configuration
   */
