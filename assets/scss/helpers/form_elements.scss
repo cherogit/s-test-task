@@ -1,0 +1,90 @@
+.label {
+
+  &_checkbox {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+      .label__name:before {
+        border-color: $blueRibbon;
+      }
+    }
+
+    input[type="checkbox"] {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      white-space: nowrap;
+      border: 0;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+
+      &:checked ~ .label__name {
+        &:before {
+          border-color: $blueRibbon;
+        }
+
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &[disabled] ~ .label__name {
+        &:before {
+          border-color: $silver;
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: inline-block;
+    padding-left: 27px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    color: $primary-font-color;
+    letter-spacing: 0.0025em;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 2px solid $primary-font-color;
+      border-radius: 50%;
+      transition: background-color $speed ease-in-out;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      transform: rotate(-45deg);
+      width: 8px;
+      height: 4px;
+      border-left: 2px solid $blueRibbon;
+      border-bottom: 2px solid $blueRibbon;
+      opacity: 0;
+      visibility: hidden;
+      transition: $speed ease-in-out;
+
+      @include tablet {
+        top: 9px;
+      }
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}

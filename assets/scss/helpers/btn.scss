@@ -1,0 +1,82 @@
+.btn {
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: $speed ease-in-out;
+
+  &_filled {
+    min-width: 112px;
+    padding: 1px 13px;
+    text-align: center;
+    font-family: $secondary-font;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: .0275em;
+    color: white;
+    border-radius: 6px;
+    background-color: $dodgerBlue;
+
+    @include tablet {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: $malibu;
+    }
+
+    &:active {
+      background-color: $blueRibbon;
+    }
+
+    &[disabled],
+    &_disabled {
+      background-color: $silver;
+      cursor: default;
+    }
+  }
+
+  &_ghost {
+    padding: 0 26px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $dodgerBlue;
+    letter-spacing: .0275em;
+    border-radius: 6px;
+    border: 1px solid $dodgerBlue;
+
+    @include tablet {
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+
+    @include laptop {
+      padding-right: 13px;
+      padding-left: 13px;
+    }
+
+    &:hover {
+      background-color: $anakiwa;
+      color: black;
+    }
+
+    &:active {
+      background-color: $malibu;
+      color: black;
+    }
+
+    &[disabled],
+    &_disabled {
+      background-color: white;
+      border-color: $silver;
+      color: $silver;
+      cursor: default;
+    }
+  }
+}

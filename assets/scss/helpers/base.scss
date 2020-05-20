@@ -1,0 +1,88 @@
+html *,
+html::before,
+html::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: $primary-font;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.logo {
+  display: block;
+  max-width: 52px;
+  font-size: 0;
+  transition: opacity $speed ease-in-out;
+
+  @include tablet {
+    max-width: 82px;
+  }
+
+  @include laptop {
+    max-width: 112px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.link {
+  transition: $speed ease-in-out;
+
+  &:hover {
+    color: rgba($secondary-font-color, .6);
+  }
+
+  &:active {
+    color: $primary-font-color;
+  }
+
+  svg {
+    fill: currentColor;
+  }
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+}
