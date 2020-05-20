@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   /*
@@ -10,22 +9,23 @@ export default {
     },
     title: 'Тестовое задание Selectel',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Тестовое задание Selectel' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: 'Тестовое задание Selectel'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'}
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
   /*
   ** Global CSS
   */
   css: [
+    'vue-slider-component/theme/antd.css',
     './assets/scss/main.scss'
   ],
   styleResources: {
@@ -44,8 +44,7 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-  ],
+  buildModules: [],
   /*
   ** Nuxt.js modules
   */
@@ -56,7 +55,7 @@ export default {
   svgLoader: {
     svgoConfig: {
       plugins: [
-        { prefixIds: false }
+        {prefixIds: false}
       ]
     }
   },
@@ -67,7 +66,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   }
 }

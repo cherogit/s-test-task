@@ -73,7 +73,6 @@
 </template>
 
 <script>
-  import 'vue-slider-component/theme/antd.css'
   import {getServers} from "~/plugins/api"
   import {translations} from "~/plugins/translations"
   import ServersList from "./ServersList"
@@ -280,75 +279,6 @@
         font-size: 16px;
       }
     }
-  }
-
-  .vue-slider-rail {
-    background-color: $mercury;
-  }
-
-  .vue-slider-process,
-  .vue-slider:hover .vue-slider-process {
-    background-color: $dodgerBlue;
-  }
-
-  .vue-slider-dot-tooltip-inner {
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    color: black;
-  }
-
-  .vue-slider-dot {
-    border-radius: 50%;
-  }
-
-  .vue-slider-dot-tooltip-bottom {
-    bottom: -5px;
-
-    @include tablet {
-      bottom: -9px;
-    }
-  }
-
-  .vue-slider-dot-tooltip-inner {
-    padding: 0;
-    box-shadow: none;
-    font-size: 12px;
-    line-height: 120%;
-    color: $primary-font-color;
-    letter-spacing: .0025em;
-
-    @include tablet {
-      font-size: 14px;
-    }
-  }
-
-  .vue-slider-dot-tooltip-inner-bottom {
-    &:after {
-      display: none;
-    }
-  }
-
-  .vue-slider-mark-label {
-    margin-top: 3px !important;
-    font-size: 12px;
-    line-height: 120%;
-    color: $silver;
-    letter-spacing: .0025em;
-  }
-
-  .vue-slider-mark-label-active {
-    display: none;
-  }
-
-  .vue-slider-mark-step {
-    display: none !important;
-  }
-
-  .vue-slider-dot-handle {
-    border: 0;
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(black, .18);
   }
 
 </style>
